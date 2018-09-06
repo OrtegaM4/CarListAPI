@@ -24,7 +24,7 @@ class Cars(models.Model):
     def save(self, *args, **kwargs):
         """
         Use the `pygments` library to create a highlighted HTML
-        representation of the code snippet.
+        representation of the code snippet. [TESTING]
         """
         lexer = get_lexer_by_name(self.language)
         linenos = 'table' if self.linenos else False
