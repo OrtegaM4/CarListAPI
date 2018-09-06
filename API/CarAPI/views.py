@@ -9,10 +9,11 @@ from rest_framework import status
 from rest_framework import permissions
 
 
+
 class CarsList(APIView):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     """
-    List all cars, or create a new cars.
+    List all Cars, or Create a new Cars TEST.
     """
     def get(self, request, format=None):
         cars = Cars.objects.all()
